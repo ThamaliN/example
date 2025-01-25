@@ -1,0 +1,90 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Section Title Styling */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Product Container */
+.pro-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    justify-items: center; /* Center items horizontally */
+    align-items: stretch; /* Make items equal height */
+}
+
+/* Product Card Styling */
+.pro {
+    text-align: center;
+    margin: 20px;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Product Image Styling */
+.pro img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Zoom-Out Effect on Hover */
+.pro img:hover {
+    transform: scale(1.1); /* Scale down to 90% */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
+.pro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.des span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.des h4 {
+    color: #ff5722;
+    font-weight: bold;
+}
